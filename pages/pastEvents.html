@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Events - Meet at Event</title>
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="../images/logo.svg" alt="Meet at Event Logo" class="logo">
+                <h1>Meet at Event</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="upcomingEvents.html">Upcoming Events</a></li>
+                <li><a href="pastEvents.html" class="active">Past Events</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h2>Past Events</h2>
+            <p>Explore events that have already happened and view recordings</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section style="padding: 40px 20px; background: #1a1a1a;">
+        <div class="container">
+            <h3 style="margin-bottom: 1.5rem; text-align: center; color: #e0e0e0;">Browse Archive</h3>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <button class="filter-btn active" data-filter="all" style="padding: 0.6rem 1.2rem; border: 2px solid #d4af37; background: #d4af37; color: #0a0a0a; border-radius: 5px; cursor: pointer; font-weight: 600;">All Events</button>
+                <button class="filter-btn" data-filter="conference" style="padding: 0.6rem 1.2rem; border: 2px solid #d4af37; background: transparent; color: #d4af37; border-radius: 5px; cursor: pointer; font-weight: 600;">Conferences</button>
+                <button class="filter-btn" data-filter="workshop" style="padding: 0.6rem 1.2rem; border: 2px solid #d4af37; background: transparent; color: #d4af37; border-radius: 5px; cursor: pointer; font-weight: 600;">Workshops</button>
+                <button class="filter-btn" data-filter="networking" style="padding: 0.6rem 1.2rem; border: 2px solid #d4af37; background: transparent; color: #d4af37; border-radius: 5px; cursor: pointer; font-weight: 600;">Networking</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Grid -->
+    <section style="padding: 60px 20px; background: #0a0a0a;">
+        <div class="container">
+            <div class="events-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
+                
+                <!-- Event 1 -->
+                <div class="event-card" data-category="conference">
+                    <div class="event-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">🎤</div>
+                    <div class="event-content">
+                        <h3>Annual Tech Summit 2023</h3>
+                        <div class="event-date">📅 December 10-12, 2023 | ✅ Completed</div>
+                        <div class="event-description">
+                            A massive gathering of tech professionals with keynotes from industry 
+                            leaders. Over 3,000 attendees participated.
+                        </div>
+                        <a href="login.html" class="btn-event">View Recording</a>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="event-card" data-category="workshop">
+                    <div class="event-image" style="background: linear-gradient(135deg, #f093fb, #f5576c);">🛠️</div>
+                    <div class="event-content">
+                        <h3>Mobile App Development Workshop</h3>
+                        <div class="event-date">📅 November 25, 2023 | ✅ Completed</div>
+                        <div class="event-description">
+                            Intensive hands-on workshop covering iOS and Android development. 
+                            Participants built a complete app.
+                        </div>
+                        <a href="login.html" class="btn-event">View Recording</a>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="event-card" data-category="networking">
+                    <div class="event-image" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">🌐</div>
+                    <div class="event-content">
+                        <h3>Entrepreneur's Networking Event</h3>
+                        <div class="event-date">📅 November 18, 2023 | ✅ Completed</div>
+                        <div class="event-description">
+                            Connect with fellow entrepreneurs and potential investors. 
+                            Great opportunity to pitch ideas and find collaborators.
+                        </div>
+                        <a href="login.html" class="btn-event">View Photos</a>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="event-card" data-category="conference">
+                    <div class="event-image" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">📈</div>
+                    <div class="event-content">
+                        <h3>Digital Marketing Excellence 2023</h3>
+                        <div class="event-date">📅 October 28-29, 2023 | ✅ Completed</div>
+                        <div class="event-description">
+                            Comprehensive conference on modern digital marketing strategies, 
+                            tools, and best practices.
+                        </div>
+                        <a href="login.html" class="btn-event">View Recording</a>
+                    </div>
+                </div>
+
+                <!-- Event 5 -->
+                <div class="event-card" data-category="workshop">
+                    <div class="event-image" style="background: linear-gradient(135deg, #fa709a, #fee140);">🎨</div>
+                    <div class="event-content">
+                        <h3>Creative Design Bootcamp</h3>
+                        <div class="event-date">📅 September 15-17, 2023 | ✅ Completed</div>
+                        <div class="event-description">
+                            3-day intensive bootcamp on graphic and web design. Learn industry 
+                            tools and design principles.
+                        </div>
+                        <a href="login.html" class="btn-event">View Recording</a>
+                    </div>
+                </div>
+
+                <!-- Event 6 -->
+                <div class="event-card" data-category="networking">
+                    <div class="event-image" style="background: linear-gradient(135deg, #a8edea, #fed6e3);">👔</div>
+                    <div class="event-content">
+                        <h3>Corporate Leaders Forum</h3>
+                        <div class="event-date">📅 August 20, 2023 | ✅ Completed</div>
+                        <div class="event-description">
+                            Exclusive gathering of C-suite executives. Discussions on business 
+                            trends and strategic partnerships.
+                        </div>
+                        <a href="login.html" class="btn-event">View Highlights</a>
+                    </div>
+                </div>
+
+                <!-- Event 7 -->
+                <div class="event-card" data-category="conference">
+                    <div class="event-image" style="background: linear-gradient(135deg, #ff9a56, #ff6a88);">🚀</div>
+                    <div class="event-content">
+                        <h3>StartUp Accelerator Demo Day</h3>
+                        <div class="event-date">📅 July 30, 2023 | ✅ Completed</div>
+                        <div class="event-description">
+                            Emerging startups pitch their ideas to investors. Exciting innovations 
+                            and networking opportunities.
+                        </div>
+                        <a href="login.html" class="btn-event">View Recording</a>
+                    </div>
+                </div>
+
+                <!-- Event 8 -->
+                <div class="event-card" data-category="workshop">
+                    <div class="event-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">🔧</div>
+                    <div class="event-content">
+                        <h3>Cloud Architecture Workshop</h3>
+                        <div class="event-date">📅 June 18, 2023 | ✅ Completed</div>
+                        <div class="event-description">
+                            Learn AWS, Azure, and Google Cloud. Hands-on exercises with real-world 
+                            scenarios.
+                        </div>
+                        <a href="login.html" class="btn-event">View Recording</a>
+                    </div>
+                </div>
+
+                <!-- Event 9 -->
+                <div class="event-card" data-category="networking">
+                    <div class="event-image" style="background: linear-gradient(135deg, #f093fb, #f5576c);">🎯</div>
+                    <div class="event-content">
+                        <h3>Women in Tech Networking Summit</h3>
+                        <div class="event-date">📅 May 22, 2023 | ✅ Completed</div>
+                        <div class="event-description">
+                            Empowering women in the technology industry. Mentorship and 
+                            networking opportunities.
+                        </div>
+                        <a href="login.html" class="btn-event">View Photos</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-box">
+                <h3 class="stat-number">150+</h3>
+                <p>Events Hosted</p>
+            </div>
+            <div class="stat-box">
+                <h3 class="stat-number">100K+</h3>
+                <p>Total Attendees</p>
+            </div>
+            <div class="stat-box">
+                <h3 class="stat-number">500+</h3>
+                <p>Speakers</p>
+            </div>
+            <div class="stat-box">
+                <h3 class="stat-number">99%</h3>
+                <p>Satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section style="padding: 60px 20px; background: #1a1a1a;">
+        <div class="container">
+            <h2 class="section-title" style="color: #e0e0e0;">What Attendees Say</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div style="background: #2d2d2d; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); border: 1px solid #3a3a3a;">
+                    <p style="margin-bottom: 1rem; color: #b0b0b0;">
+                        "The events organized through Meet at Event are absolutely professional and well-managed. 
+                        I've made valuable connections at every event I attended!"
+                    </p>
+                    <p style="font-weight: bold; color: #d4af37;">⭐⭐⭐⭐⭐ John D.</p>
+                </div>
+                <div style="background: #2d2d2d; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); border: 1px solid #3a3a3a;">
+                    <p style="margin-bottom: 1rem; color: #b0b0b0;">
+                        "The platform makes event management so easy. From registration to follow-up, 
+                        everything is seamless and efficient."
+                    </p>
+                    <p style="font-weight: bold; color: #d4af37;">⭐⭐⭐⭐⭐ Sarah M.</p>
+                </div>
+                <div style="background: #2d2d2d; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); border: 1px solid #3a3a3a;">
+                    <p style="margin-bottom: 1rem; color: #b0b0b0;">
+                        "Fantastic experience! The customer support team went above and beyond to help 
+                        organize our corporate event."
+                    </p>
+                    <p style="font-weight: bold; color: #d4af37;">⭐⭐⭐⭐⭐ Michael T.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready for the Next Event?</h2>
+            <p>Check out upcoming events and register today</p>
+            <a href="upcomingEvents.html" class="btn btn-large">View Upcoming Events</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>Meet at Event</h4>
+                <p>We manage and host your event.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="upcomingEvents.html">Events</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="aboutus.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <input type="email" placeholder="Your email" class="email-input">
+                <button class="btn btn-small">Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Meet at Event. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

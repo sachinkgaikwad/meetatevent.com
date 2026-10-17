@@ -1,0 +1,298 @@
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-brand {
+        gap: 0.3rem;
+    }
+
+    .nav-brand h1 {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    .nav-links {
+        position: fixed;
+        left: 0;
+        top: 60px;
+        flex-direction: column;
+        background: linear-gradient(135deg, #21152d, #100b16);
+        width: 100%;
+        text-align: center;
+        transform: translateX(-100%);
+        gap: 0;
+        transition: transform 0.3s ease;
+        max-height: calc(100vh - 60px);
+        overflow-y: auto;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .nav-links li {
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(10px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-10px);
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 60px 20px;
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .hero-animation {
+        height: 250px;
+        margin-top: 2rem;
+    }
+
+    .floating-card {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Features Section */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    /* Stats Section */
+    .stats .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    /* CTA Section */
+    .cta h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .email-input {
+        max-width: 100%;
+    }
+
+    /* Event Cards */
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Login Form */
+    .login-form {
+        padding: 2rem;
+    }
+
+    /* About Page */
+    .about-hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+    .nav-brand h1 {
+        font-size: 1.3rem;
+    }
+
+    .logo {
+        height: 35px;
+        width: 35px;
+        margin-right: 0.3rem;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .feature-card p {
+        font-size: 0.9rem;
+    }
+
+    .stat-box {
+        padding: 1rem;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .event-card {
+        margin-bottom: 1rem;
+    }
+
+    .login-form {
+        padding: 1.5rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .about-hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-section h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .footer,
+    .cta {
+        display: none;
+    }
+
+    .features-grid,
+    .stats .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* High Resolution Displays */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .features-grid {
+        gap: 2.5rem;
+    }
+}
+
+/* Touch Device Optimization */
+@media (hover: none) and (pointer: coarse) {
+    .btn {
+        padding: 1rem 2rem;
+    }
+
+    .feature-card {
+        cursor: pointer;
+    }
+
+    .nav-links a {
+        padding: 0.5rem;
+    }
+}
+
+/* Dark Mode Support - Now Default */
+body {
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        background: rgba(17, 11, 25, 0.98);
+        border-top: 1px solid rgba(243, 205, 114, 0.2);
+    }
+
+    .nav-links li {
+        border-bottom-color: rgba(216, 180, 254, 0.12);
+    }
+
+    .hero-animation {
+        height: auto;
+    }
+}

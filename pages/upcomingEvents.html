@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events - Meet at Event</title>
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="../images/logo.svg" alt="Meet at Event Logo" class="logo">
+                <h1>Meet at Event</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="upcomingEvents.html" class="active">Upcoming Events</a></li>
+                <li><a href="pastEvents.html">Past Events</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <p>Discover and join amazing events happening near you</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section style="padding: 40px 20px; background: #1a1a1a;">
+        <div class="container">
+            <h3 style="margin-bottom: 1.5rem; text-align: center; color: #e0e0e0;">Filter Events</h3>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <button class="filter-btn active" data-filter="all" style="padding: 0.6rem 1.2rem; border: 2px solid #d4af37; background: #d4af37; color: #0a0a0a; border-radius: 5px; cursor: pointer; font-weight: 600;">All Events</button>
+                <button class="filter-btn" data-filter="workshop" style="padding: 0.6rem 1.2rem; border: 2px solid #d4af37; background: transparent; color: #d4af37; border-radius: 5px; cursor: pointer; font-weight: 600;">Workshops</button>
+                <button class="filter-btn" data-filter="networking" style="padding: 0.6rem 1.2rem; border: 2px solid #d4af37; background: transparent; color: #d4af37; border-radius: 5px; cursor: pointer; font-weight: 600;">Networking</button>
+                <button class="filter-btn" data-filter="seminar" style="padding: 0.6rem 1.2rem; border: 2px solid #d4af37; background: transparent; color: #d4af37; border-radius: 5px; cursor: pointer; font-weight: 600;">Seminars</button>
+                <button class="filter-btn" data-filter="cultural" style="padding: 0.6rem 1.2rem; border: 2px solid #d4af37; background: transparent; color: #d4af37; border-radius: 5px; cursor: pointer; font-weight: 600;">Cultural Events</button>
+                <button class="filter-btn" data-filter="offroad" style="padding: 0.6rem 1.2rem; border: 2px solid #d4af37; background: transparent; color: #d4af37; border-radius: 5px; cursor: pointer; font-weight: 600;">Offroad Events</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Grid -->
+    <section style="padding: 60px 20px; background: #0a0a0a;">
+        <div class="container">
+            <div class="events-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
+                
+                <!-- Event 1 -->
+                <div class="event-card" data-category="cultural">
+                    <img src="../images/Dandiya2026.png" alt="Navaratri with Vejeta" class="event-image-img">
+                    <div class="event-content">
+                        <h3>Navaratri with Vejeta - Garba Dandiya Night</h3>
+                        <div class="event-date">📅 October 17, 2025 | 📍 Sportiqo Sports Arena, Ambegaon BK</div>
+                        <div class="event-description">
+                            Celebrate Navaratri with traditional Garba and Dandiya night! Experience 
+                            music, dance, food, and cultural festivities. Join us for an unforgettable 
+                            evening of celebration and community.
+                        </div>
+                        <a href="login.html" class="btn-event">Register Now</a>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="event-card" data-category="offroad">
+                    <div class="event-image">🏍️</div>
+                    <div class="event-content">
+                        <h3>Offroad Adventure Challenge</h3>
+                        <div class="event-date">📅 Coming Soon | 📍 Various Locations</div>
+                        <div class="event-description">
+                            Experience the thrill of offroad adventures! Join us for an exciting journey 
+                            through challenging terrains, extreme sports, and unforgettable experiences. 
+                            Perfect for adventure enthusiasts.
+                        </div>
+                        <a href="login.html" class="btn-event">Register Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Host Your Own Event?</h2>
+            <p>Start organizing amazing events today</p>
+            <a href="login.html" class="btn btn-large">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>Meet at Event</h4>
+                <p>We manage and host your event.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="upcomingEvents.html">Events</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="aboutus.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <input type="email" placeholder="Your email" class="email-input">
+                <button class="btn btn-small">Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Meet at Event. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
