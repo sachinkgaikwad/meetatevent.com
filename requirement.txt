@@ -1,3 +1,0 @@
-generate website for meet at event .
-genereate aboutus page : we are event orgeniser platform , you can host your own event on this platfom run campaiens , 
-create page for upcoming events ,  past events , user login button add latest theme and effects .
