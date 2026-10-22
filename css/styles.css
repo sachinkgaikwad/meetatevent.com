@@ -409,7 +409,24 @@ body {
 
 .social-links {
     display: flex;
+    align-items: center;
     gap: 1rem;
+}
+
+.footer-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-link svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 .email-input {
@@ -526,6 +543,12 @@ body {
     display: block;
 }
 
+.event-poster {
+    height: 320px;
+    object-fit: contain;
+    background: #14111a;
+}
+
 .event-content {
     padding: 1.5rem;
 }
@@ -552,10 +575,22 @@ body {
     color: white;
     padding: 0.6rem 1.2rem;
     border-radius: 5px;
+    border: 0;
     text-decoration: none;
     font-size: 0.9rem;
+    font-family: inherit;
     display: inline-block;
     transition: all 0.3s ease;
+}
+
+.btn-event:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+.btn-event:disabled:hover {
+    transform: none;
+    box-shadow: none;
 }
 
 .btn-event:hover {

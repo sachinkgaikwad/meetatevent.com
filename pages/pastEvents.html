@@ -45,9 +45,10 @@
             <h3 style="margin-bottom: 1.5rem; text-align: center; color: #e0e0e0;">Browse Archive</h3>
             <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
                 <button class="filter-btn active" data-filter="all" style="padding: 0.6rem 1.2rem; border: 2px solid #d4af37; background: #d4af37; color: #0a0a0a; border-radius: 5px; cursor: pointer; font-weight: 600;">All Events</button>
-                <button class="filter-btn" data-filter="conference" style="padding: 0.6rem 1.2rem; border: 2px solid #d4af37; background: transparent; color: #d4af37; border-radius: 5px; cursor: pointer; font-weight: 600;">Conferences</button>
-                <button class="filter-btn" data-filter="workshop" style="padding: 0.6rem 1.2rem; border: 2px solid #d4af37; background: transparent; color: #d4af37; border-radius: 5px; cursor: pointer; font-weight: 600;">Workshops</button>
                 <button class="filter-btn" data-filter="networking" style="padding: 0.6rem 1.2rem; border: 2px solid #d4af37; background: transparent; color: #d4af37; border-radius: 5px; cursor: pointer; font-weight: 600;">Networking</button>
+                <button class="filter-btn" data-filter="cultural" style="padding: 0.6rem 1.2rem; border: 2px solid #d4af37; background: transparent; color: #d4af37; border-radius: 5px; cursor: pointer; font-weight: 600;">Cultural Events</button>
+                <button class="filter-btn" data-filter="community" style="padding: 0.6rem 1.2rem; border: 2px solid #d4af37; background: transparent; color: #d4af37; border-radius: 5px; cursor: pointer; font-weight: 600;">Community Meets</button>
+                <button class="filter-btn" data-filter="fitness" style="padding: 0.6rem 1.2rem; border: 2px solid #d4af37; background: transparent; color: #d4af37; border-radius: 5px; cursor: pointer; font-weight: 600;">Fitness</button>
             </div>
         </div>
     </section>
@@ -57,115 +58,46 @@
         <div class="container">
             <div class="events-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
                 
-                <!-- Event 1 -->
-                <div class="event-card" data-category="conference">
-                    <div class="event-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">🎤</div>
+                <div class="event-card" data-category="community">
+                    <div class="event-image" style="background: linear-gradient(135deg, #d4af37, #8b5e3c);">🚙☕</div>
                     <div class="event-content">
-                        <h3>Annual Tech Summit 2023</h3>
-                        <div class="event-date">📅 December 10-12, 2023 | ✅ Completed</div>
+                        <h3>Pune Thar Club Breakfast Meet</h3>
+                        <div class="event-date">📅 Sunday, September 27, 2026 | 9:00 AM–12:00 PM | 📍 Kukoo, The Mills, Behind Sheraton Grand, Pune | ✅ Completed · Registration Closed</div>
                         <div class="event-description">
-                            A massive gathering of tech professionals with keynotes from industry 
-                            leaders. Over 3,000 attendees participated.
+                            A relaxed morning for Pune Thar Club members, owners, friends, and family
+                            to meet, share road-trip stories and experiences, and make new connections.
+                            Breakfast is all inclusive: ₹720 per person and ₹400 for children aged 8
+                            and under.
                         </div>
-                        <a href="login.html" class="btn-event">View Recording</a>
+                        <button type="button" class="btn-event" disabled title="Photos are not available yet">View Photos</button>
                     </div>
                 </div>
 
-                <!-- Event 2 -->
-                <div class="event-card" data-category="workshop">
-                    <div class="event-image" style="background: linear-gradient(135deg, #f093fb, #f5576c);">🛠️</div>
+                <div class="event-card" data-category="fitness">
+                    <div class="event-image" style="background: linear-gradient(135deg, #f093fb, #f5576c);">💃</div>
                     <div class="event-content">
-                        <h3>Mobile App Development Workshop</h3>
-                        <div class="event-date">📅 November 25, 2023 | ✅ Completed</div>
+                        <h3>Zumba Workshop</h3>
+                        <div class="event-date">📅 May 22, 2026 | ✅ Completed</div>
                         <div class="event-description">
-                            Intensive hands-on workshop covering iOS and Android development. 
-                            Participants built a complete app.
+                            Get moving, boost your energy, and enjoy a fun, beginner-friendly workout
+                            with lively music and guided dance-fitness routines. Open to all fitness
+                            levels.
                         </div>
-                        <a href="login.html" class="btn-event">View Recording</a>
+                        <button type="button" class="btn-event" disabled title="Photos are not available yet">View Photos</button>
                     </div>
                 </div>
 
-                <!-- Event 3 -->
-                <div class="event-card" data-category="networking">
-                    <div class="event-image" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">🌐</div>
+                <div class="event-card" data-category="cultural">
+                    <img src="../images/Dandiya2026.png" alt="Navaratri with Vejeta - Garba Dandiya Night" class="event-image-img">
                     <div class="event-content">
-                        <h3>Entrepreneur's Networking Event</h3>
-                        <div class="event-date">📅 November 18, 2023 | ✅ Completed</div>
+                        <h3>Navaratri with Vejeta - Garba Dandiya Night</h3>
+                        <div class="event-date">📅 October 17, 2025 | 📍 Sportiqo Sports Arena, Ambegaon BK | ✅ Completed · Registration Closed</div>
                         <div class="event-description">
-                            Connect with fellow entrepreneurs and potential investors. 
-                            Great opportunity to pitch ideas and find collaborators.
+                            Celebrate Navaratri with traditional Garba and Dandiya night! Experience
+                            music, dance, food, and cultural festivities. An unforgettable evening of
+                            celebration and community.
                         </div>
-                        <a href="login.html" class="btn-event">View Photos</a>
-                    </div>
-                </div>
-
-                <!-- Event 4 -->
-                <div class="event-card" data-category="conference">
-                    <div class="event-image" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">📈</div>
-                    <div class="event-content">
-                        <h3>Digital Marketing Excellence 2023</h3>
-                        <div class="event-date">📅 October 28-29, 2023 | ✅ Completed</div>
-                        <div class="event-description">
-                            Comprehensive conference on modern digital marketing strategies, 
-                            tools, and best practices.
-                        </div>
-                        <a href="login.html" class="btn-event">View Recording</a>
-                    </div>
-                </div>
-
-                <!-- Event 5 -->
-                <div class="event-card" data-category="workshop">
-                    <div class="event-image" style="background: linear-gradient(135deg, #fa709a, #fee140);">🎨</div>
-                    <div class="event-content">
-                        <h3>Creative Design Bootcamp</h3>
-                        <div class="event-date">📅 September 15-17, 2023 | ✅ Completed</div>
-                        <div class="event-description">
-                            3-day intensive bootcamp on graphic and web design. Learn industry 
-                            tools and design principles.
-                        </div>
-                        <a href="login.html" class="btn-event">View Recording</a>
-                    </div>
-                </div>
-
-                <!-- Event 6 -->
-                <div class="event-card" data-category="networking">
-                    <div class="event-image" style="background: linear-gradient(135deg, #a8edea, #fed6e3);">👔</div>
-                    <div class="event-content">
-                        <h3>Corporate Leaders Forum</h3>
-                        <div class="event-date">📅 August 20, 2023 | ✅ Completed</div>
-                        <div class="event-description">
-                            Exclusive gathering of C-suite executives. Discussions on business 
-                            trends and strategic partnerships.
-                        </div>
-                        <a href="login.html" class="btn-event">View Highlights</a>
-                    </div>
-                </div>
-
-                <!-- Event 7 -->
-                <div class="event-card" data-category="conference">
-                    <div class="event-image" style="background: linear-gradient(135deg, #ff9a56, #ff6a88);">🚀</div>
-                    <div class="event-content">
-                        <h3>StartUp Accelerator Demo Day</h3>
-                        <div class="event-date">📅 July 30, 2023 | ✅ Completed</div>
-                        <div class="event-description">
-                            Emerging startups pitch their ideas to investors. Exciting innovations 
-                            and networking opportunities.
-                        </div>
-                        <a href="login.html" class="btn-event">View Recording</a>
-                    </div>
-                </div>
-
-                <!-- Event 8 -->
-                <div class="event-card" data-category="workshop">
-                    <div class="event-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">🔧</div>
-                    <div class="event-content">
-                        <h3>Cloud Architecture Workshop</h3>
-                        <div class="event-date">📅 June 18, 2023 | ✅ Completed</div>
-                        <div class="event-description">
-                            Learn AWS, Azure, and Google Cloud. Hands-on exercises with real-world 
-                            scenarios.
-                        </div>
-                        <a href="login.html" class="btn-event">View Recording</a>
+                        <button type="button" class="btn-event" disabled title="Photos are not available yet">View Photos</button>
                     </div>
                 </div>
 
@@ -179,7 +111,7 @@
                             Empowering women in the technology industry. Mentorship and 
                             networking opportunities.
                         </div>
-                        <a href="login.html" class="btn-event">View Photos</a>
+                        <button type="button" class="btn-event" disabled title="Photos are not available yet">View Photos</button>
                     </div>
                 </div>
 
@@ -266,9 +198,12 @@
             <div class="footer-section">
                 <h4>Follow Us</h4>
                 <div class="social-links">
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Instagram</a>
+                    <a class="footer-social-link" href="https://www.instagram.com/meetatevent/" target="_blank" rel="noopener noreferrer" aria-label="Follow Meet at Event on Instagram" title="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.75" fill="currentColor" stroke="none"></circle></svg>
+                    </a>
+                    <a class="footer-social-link" href="https://wa.me/919185001220" target="_blank" rel="noopener noreferrer" aria-label="Contact Meet at Event on WhatsApp" title="WhatsApp">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.5-4.9a8.4 8.4 0 1 1 16-3.9Z"></path><path d="M8.6 8.3c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .5.4l.8 1.8c.1.3.1.5-.1.7l-.6.7c-.2.2-.2.4-.1.6.5.9 1.2 1.6 2.1 2.1.2.1.4.1.6-.1l.7-.8c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.3.4.5 0 .3-.2 1.2-.8 1.6-.5.4-1.1.6-1.8.4-.7-.2-1.6-.5-2.7-1.2a10 10 0 0 1-2.7-2.4c-.7-.9-1.1-1.8-1.2-2.5-.1-.7.2-1.4.5-1.9Z"></path></svg>
+                    </a>
                 </div>
             </div>
             <div class="footer-section">
